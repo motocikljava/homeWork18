@@ -3,6 +3,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
+        // помогите разобраться почему не проходит проверка логина
         boolean chec = Validate("ssg", "sss", "sыss");
         if (chec) {
             System.out.println("верные данные");
@@ -12,6 +13,7 @@ public class Main {
 
 
     }
+
     public static boolean Validate (String login, String password, String confirmPassword)  {
         if (!password.equals(confirmPassword)) {
             System.out.println("проверка пароля неверная");
